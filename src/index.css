@@ -7,7 +7,40 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*  */
+#root{
+    height: 100vh;
+}
+#openTask{
+  background-color: #f0f0f0;
+}
+#inprogressTask{
+  background-color: #e5ffee;
+}
+#inQATask{
+  background-color: #ffefe5;
+}
+#doneTask{
+  background-color: #aaffac;
+}
+.taskStep{
+  height: calc(100vh - 7rem);
+}
+
+.innerTaskList{
+  overflow-y: auto;
+    height: calc(100% - 2.5rem);
+}
+
+.innerTaskList::-webkit-scrollbar{
+  display: none;
 }
